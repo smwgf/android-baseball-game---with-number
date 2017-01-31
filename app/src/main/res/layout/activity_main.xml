@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+    >
+<LinearLayout android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_gravity="right"
+                  android:gravity="right"
+                  android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="Attempts"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/txt_try"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="128dp"
+            android:id="@+id/numberPicker1" />
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="128dp"
+            android:id="@+id/numberPicker2" />
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="128dp"
+            android:id="@+id/numberPicker3" />
+        <Button
+            android:id="@+id/btn_login"
+            android:drawableTop="@drawable/buttontry"
+            android:text="Try"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="128dp"
+            android:onClick="onButtonClick"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="strike"
+            android:textSize="20sp"/>
+        <ImageView
+            android:id="@+id/img_strike1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/greencircle"/>
+        <ImageView
+            android:id="@+id/img_strike2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/greencircle"/>
+        <ImageView
+            android:id="@+id/img_strike3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/greencircle"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="ball"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <ImageView
+            android:id="@+id/img_ball1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/yellowcircle"/>
+        <ImageView
+            android:id="@+id/img_ball2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/yellowcircle"/>
+        <ImageView
+            android:id="@+id/img_ball3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/yellowcircle"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="out"
+            android:textSize="20sp"/>
+        <ImageView
+            android:id="@+id/img_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/redcircle"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
